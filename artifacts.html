@@ -1,115 +1,594 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artifacts | Abandoned But Not Forgotten</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-<header class="navbar">
-    <a href="index.html" class="logo">ABANDONED <small>BUT NOT FORGOTTEN</small></a>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="moon.html">Moon</a>
-        <a href="mars.html">Mars</a>
-        <a href="artifacts.html" class="active">Artifacts</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="explorer.html">Explorer</a>
-    </nav>
+    <meta name="description" content="An archive of spacecraft, rovers, instruments, and equipment left on the Moon and Mars.">
+
+    <title>Artifact Archive | AFTERLIGHT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-artifacts">
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+
+        <a class="site-logo" href="index.html">
+            AFTER<span>LIGHT</span>
+            <small>THE SILENT RELICS OF SPACE EXPLORATION</small>
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="primary-navigation"
+             id="primary-navigation"
+             aria-label="Main navigation">
+
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="moon.html">The Moon</a>
+            <a class="nav-link" href="mars.html">Mars</a>
+            <a class="nav-link active" href="artifacts.html" aria-current="page">Artifacts</a>
+            <a class="nav-link" href="timeline.html">Timeline</a>
+            <a class="nav-link" href="explorer.html">Explorer</a>
+
+        </nav>
+    </div>
 </header>
 
-<main>
-<section class="hero artifacts-hero">
-    <div class="hero-content">
-        <div class="eyebrow">ARCHIVE / HISTORIC SPACE TECHNOLOGY</div>
-        <h1>FORGOTTEN<br><span>TECHNOLOGY.</span></h1>
-        <p class="hero-description">
-            A collection of remarkable machines, instruments and
-            spacecraft that helped humanity explore the unknown.
-        </p>
-        <a href="#collection" class="primary-button">VIEW COLLECTION ↗</a>
-    </div>
-</section>
 
-<section class="intro section-padding">
-    <div class="section-label">01 / THE COLLECTION</div>
-    <div class="intro-grid">
-        <h2>Every artifact<br>has a <span>story.</span></h2>
-        <div class="intro-text">
-            <p>Space exploration has produced some of the most extraordinary machines ever built.</p>
-            <p>Some remain on distant worlds. Others returned to Earth as historical objects. Together, they preserve the story of exploration.</p>
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="page-hero artifacts-hero">
+
+        <div class="page-hero-image"
+             role="img"
+             aria-label="Spacecraft hardware and scientific equipment">
         </div>
-    </div>
-</section>
 
-<section class="discover section-padding" id="collection">
-    <div class="section-label">02 / HISTORIC COLLECTION</div>
-    <div class="section-heading">
-        <h2>THE ARCHIVE.</h2>
-    </div>
+        <div class="page-hero-content content-width">
 
-    <div class="destination-grid">
+            <p class="eyebrow">
+                THE COLLECTION / OBJECTS LEFT BEHIND
+            </p>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85" alt="Spacecraft" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">LUNAR TECHNOLOGY</span>
-                <h3>APOLLO LM</h3>
-                <p>The Lunar Module carried astronauts between lunar orbit and the Moon's surface.</p>
+            <h1>
+                Artifact<br>
+                Archive<span>.</span>
+            </h1>
+
+            <p>
+                A catalogue of the machines, instruments, and mission
+                hardware that became part of worlds beyond Earth.
+            </p>
+
+            <div class="page-hero-bottom">
+                <span>THE MOON / MARS</span>
+                <span>HUMAN-MADE TRACES</span>
             </div>
-        </article>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=1200&q=85" alt="Lunar rover" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">MOBILE EXPLORATION</span>
-                <h3>LUNAR ROVER</h3>
-                <p>Apollo's electric vehicle enabled astronauts to travel farther across the lunar surface.</p>
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="content-intro section-padding content-width">
+
+        <div class="section-kicker">
+            <span>01</span>
+            <span>THE COLLECTION</span>
+        </div>
+
+        <div class="content-intro-copy">
+
+            <p class="eyebrow">
+                A CATALOGUE OF EXPLORATION
+            </p>
+
+            <h2>
+                Built for a mission.<br>
+                Remembered by a world.
+            </h2>
+
+            <p>
+                Every artifact in this archive began as a practical
+                part of a mission: a vehicle to travel, an instrument
+                to measure, a structure to land, or a tool to help a
+                crew work. Some objects completed their tasks exactly
+                as planned. Others outlived expectations or stopped
+                working in distant places.
+            </p>
+
+            <p>
+                This archive groups notable examples by mission and
+                destination. Active spacecraft are identified as
+                active rather than described as abandoned.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ARCHIVE COLLECTION -->
+    <section class="archive-controls-section section-padding">
+
+        <div class="content-width">
+
+            <div class="section-heading-row">
+
+                <div>
+                    <p class="eyebrow">BROWSE THE COLLECTION</p>
+                    <h2>Objects in the archive.</h2>
+                </div>
+
+                <p class="section-side-note">
+                    Use the destination links to explore<br>
+                    the collection by world.
+                </p>
+
             </div>
-        </article>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1630839437035-dac17da580d0?auto=format&fit=crop&w=1200&q=85" alt="Mars rover" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">MARS EXPLORATION</span>
-                <h3>SOJOURNER</h3>
-                <p>A small robotic rover that became a pioneer of surface exploration on Mars.</p>
+
+            <!-- FILTER LINKS -->
+            <div class="archive-filter-links" aria-label="Archive sections">
+
+                <a href="#moon-artifacts">The Moon</a>
+                <a href="#mars-artifacts">Mars</a>
+                <a href="#mission-hardware">Mission hardware</a>
+
             </div>
-        </article>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=85" alt="Space satellite" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">SCIENTIFIC INSTRUMENT</span>
-                <h3>EXPERIMENTS</h3>
-                <p>Scientific instruments that collected valuable information from beyond Earth.</p>
+
+            <!-- MOON COLLECTION -->
+            <div class="archive-group" id="moon-artifacts">
+
+                <div class="archive-group-heading">
+
+                    <span>COLLECTION 01</span>
+
+                    <h3>Lunar artifacts</h3>
+
+                    <p>
+                        Equipment and objects left during robotic
+                        and crewed lunar missions.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-card-grid">
+
+                    <!-- APOLLO -->
+                    <article class="archive-card" id="apollo-descent-stages">
+
+                        <div class="archive-card-image archive-apollo"
+                             role="img"
+                             aria-label="Apollo lunar module descent stage">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>THE MOON</span>
+                                <span>1969–1972</span>
+                            </div>
+
+                            <h3>Apollo descent stages</h3>
+
+                            <p>
+                                The lower sections of the Apollo lunar
+                                modules remained at their landing sites
+                                after the ascent stages carried astronauts
+                                back to orbit.
+                            </p>
+
+                            <a href="moon.html#apollo-11" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- LUNOKHOD -->
+                    <article class="archive-card" id="lunokhod-1">
+
+                        <div class="archive-card-image archive-lunokhod"
+                             role="img"
+                             aria-label="Lunokhod 1 lunar rover">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>THE MOON</span>
+                                <span>1970–1971</span>
+                            </div>
+
+                            <h3>Lunokhod 1</h3>
+
+                            <p>
+                                The Soviet robotic rover explored the
+                                lunar surface for months, returning
+                                images and scientific measurements.
+                            </p>
+
+                            <a href="moon.html#lunokhod" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- ALSEP -->
+                    <article class="archive-card" id="apollo-experiments">
+
+                        <div class="archive-card-image archive-experiment"
+                             role="img"
+                             aria-label="Apollo lunar surface experiment package">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>THE MOON</span>
+                                <span>1969–1972</span>
+                            </div>
+
+                            <h3>ALSEP experiment packages</h3>
+
+                            <p>
+                                The Apollo Lunar Surface Experiments
+                                Packages contained instruments designed
+                                to study the Moon after astronauts departed.
+                            </p>
+
+                            <a href="moon.html#apollo-12" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+                </div>
             </div>
-        </article>
 
-    </div>
-</section>
 
-<section class="section-padding">
-    <div class="section-label">03 / BEYOND THE MACHINES</div>
-    <h2>ENGINEERING BECOMES HISTORY.</h2>
-    <p class="hero-description">These artifacts are reminders of the curiosity and courage that made space exploration possible.</p>
-    <a href="timeline.html" class="primary-button">EXPLORE THE TIMELINE ↗</a>
-</section>
+            <!-- MARS COLLECTION -->
+            <div class="archive-group" id="mars-artifacts">
+
+                <div class="archive-group-heading">
+
+                    <span>COLLECTION 02</span>
+
+                    <h3>Martian artifacts</h3>
+
+                    <p>
+                        Robotic explorers and landing equipment
+                        delivered to the red planet.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-card-grid">
+
+                    <!-- SOJOURNER -->
+                    <article class="archive-card" id="sojourner">
+
+                        <div class="archive-card-image archive-sojourner"
+                             role="img"
+                             aria-label="Sojourner Mars rover">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MARS</span>
+                                <span>1997</span>
+                            </div>
+
+                            <h3>Sojourner</h3>
+
+                            <p>
+                                The small Pathfinder rover demonstrated
+                                mobile robotic exploration on Mars and
+                                examined nearby rocks and soil.
+                            </p>
+
+                            <a href="mars.html#sojourner" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- SPIRIT -->
+                    <article class="archive-card" id="spirit">
+
+                        <div class="archive-card-image archive-spirit"
+                             role="img"
+                             aria-label="Spirit Mars Exploration Rover">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MARS</span>
+                                <span>2004–2010</span>
+                            </div>
+
+                            <h3>Spirit</h3>
+
+                            <p>
+                                One of NASA's twin Mars Exploration
+                                Rovers, Spirit worked for years before
+                                becoming stuck in soft soil.
+                            </p>
+
+                            <a href="mars.html#spirit" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- OPPORTUNITY -->
+                    <article class="archive-card" id="opportunity">
+
+                        <div class="archive-card-image archive-opportunity"
+                             role="img"
+                             aria-label="Opportunity Mars rover">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MARS</span>
+                                <span>2004–2018</span>
+                            </div>
+
+                            <h3>Opportunity</h3>
+
+                            <p>
+                                Opportunity travelled across Meridiani
+                                Planum for almost fifteen years, far
+                                beyond its original planned mission.
+                            </p>
+
+                            <a href="mars.html#opportunity" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- VIKING -->
+                    <article class="archive-card" id="viking-1">
+
+                        <div class="archive-card-image archive-viking"
+                             role="img"
+                             aria-label="Viking 1 lander on Mars">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MARS</span>
+                                <span>1976–1982</span>
+                            </div>
+
+                            <h3>Viking 1 lander</h3>
+
+                            <p>
+                                Viking 1 became the first US spacecraft
+                                to land successfully on Mars and return
+                                images from the surface.
+                            </p>
+
+                            <a href="timeline.html#1976" class="text-link">
+                                Mission background ↗
+                            </a>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+
+            <!-- MISSION HARDWARE -->
+            <div class="archive-group" id="mission-hardware">
+
+                <div class="archive-group-heading">
+
+                    <span>COLLECTION 03</span>
+
+                    <h3>Landing and mission hardware</h3>
+
+                    <p>
+                        Not every relic is a rover. Many mission
+                        components are scattered across landing sites.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-card-grid">
+
+                    <!-- HEAT SHIELDS -->
+                    <article class="archive-card">
+
+                        <div class="archive-card-image archive-heatshield"
+                             role="img"
+                             aria-label="Spacecraft heat shield">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MOON / MARS</span>
+                                <span>ENTRY</span>
+                            </div>
+
+                            <h3>Heat shields</h3>
+
+                            <p>
+                                Protective structures that absorb and
+                                redirect heat during atmospheric entry.
+                            </p>
+
+                        </div>
+                    </article>
+
+
+                    <!-- PARACHUTES -->
+                    <article class="archive-card">
+
+                        <div class="archive-card-image archive-parachute"
+                             role="img"
+                             aria-label="Planetary landing parachute">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MARS</span>
+                                <span>DESCENT</span>
+                            </div>
+
+                            <h3>Parachutes</h3>
+
+                            <p>
+                                Descent systems that slow spacecraft
+                                as they pass through the Martian atmosphere.
+                            </p>
+
+                        </div>
+                    </article>
+
+
+                    <!-- TOOLS -->
+                    <article class="archive-card">
+
+                        <div class="archive-card-image archive-tools"
+                             role="img"
+                             aria-label="Scientific tools left on a planetary surface">
+                        </div>
+
+                        <div class="archive-card-body">
+
+                            <div class="feature-meta">
+                                <span>MOON / MARS</span>
+                                <span>SURFACE</span>
+                            </div>
+
+                            <h3>Tools and instruments</h3>
+
+                            <p>
+                                Scientific devices and working tools
+                                left at sites where missions took place.
+                            </p>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ARCHIVE NOTE -->
+    <section class="archive-note-section section-padding content-width">
+
+        <p class="eyebrow">A NOTE ON THE ARCHIVE</p>
+
+        <h2>Not every object is abandoned.</h2>
+
+        <p>
+            Some spacecraft listed in the wider AFTERLIGHT story
+            are still operating. The archive distinguishes completed
+            missions from active missions so that the history remains
+            accurate. Curiosity and Perseverance, for example, are
+            active Mars rover missions and are included as part of
+            the ongoing exploration story — not as abandoned equipment.
+        </p>
+
+        <a class="button button-outline" href="timeline.html">
+            See the mission timeline ↗
+        </a>
+
+    </section>
+
 </main>
 
-<footer class="footer">
-    <a href="index.html">ABANDONED BUT NOT FORGOTTEN</a>
-    <p>Preserving the history of human exploration.</p>
-    <div class="footer-bottom">
-        <span>© 2026 SPACE EXPLORATION PROJECT</span>
-        <a href="index.html">BACK TO HOME ↑</a>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-main content-width">
+
+        <a class="site-logo footer-logo" href="index.html">
+            AFTER<span>LIGHT</span>
+            <small>THE SILENT RELICS OF SPACE EXPLORATION</small>
+        </a>
+
+        <p>
+            A digital archive exploring the human-made traces
+            left across the Moon and Mars.
+        </p>
+
+        <div class="footer-navigation">
+
+            <a href="moon.html">The Moon</a>
+            <a href="mars.html">Mars</a>
+            <a href="artifacts.html">Artifacts</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="explorer.html">Explorer</a>
+
+        </div>
+
     </div>
+
+
+    <div class="footer-bottom content-width">
+
+        <span>
+            © 2026 AFTERLIGHT. AN INDEPENDENT STORYTELLING PROJECT.
+        </span>
+
+        <a href="#main-content">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
