@@ -1,10 +1,8 @@
-
 /* =========================================================
-   AFTERLIGHT — COMPLETE GLOBAL STYLESHEET
-   The Silent Relics of Space Exploration
-   Supports: Home | Moon | Mars | Artifacts | Timeline | Explorer
+   AFTERLIGHT — COMPLETE PREMIUM GLOBAL STYLESHEET
+   Space Exploration Archive
+   Home | Moon | Mars | Artifacts | Timeline | Explorer
 ========================================================= */
-
 
 /* =========================================================
    01. ROOT VARIABLES
@@ -18,14 +16,14 @@
 
     --cyan: #48c8f0;
     --blue: #1689c9;
-    --blue-soft: rgba(72, 200, 240, 0.12);
+    --blue-soft: rgba(72, 200, 240, .12);
 
     --white: #f2f6fc;
     --text: #aab7c8;
     --muted: #718197;
 
-    --border: rgba(150, 190, 220, 0.14);
-    --border-light: rgba(255, 255, 255, 0.08);
+    --border: rgba(150, 190, 220, .14);
+    --border-light: rgba(255, 255, 255, .08);
 
     --font-main: "DM Sans", sans-serif;
     --font-heading: "Space Grotesk", sans-serif;
@@ -33,10 +31,9 @@
     --container: 1200px;
     --header-height: 84px;
 
-    --transition: 0.35s ease;
-    --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    --transition: .35s ease;
+    --shadow: 0 20px 60px rgba(0, 0, 0, .35);
 }
-
 
 /* =========================================================
    02. RESET & GLOBAL
@@ -148,7 +145,6 @@ a {
     background: var(--cyan);
 }
 
-
 /* =========================================================
    03. COMMON ELEMENTS
 ========================================================= */
@@ -196,7 +192,6 @@ a {
 .section-label span,
 .section-kicker span:first-child {
     color: var(--muted);
-    font-family: var(--font-heading);
 }
 
 .section-heading,
@@ -290,7 +285,6 @@ a {
     color: var(--cyan);
     transform: translateY(-4px);
 }
-
 
 /* =========================================================
    04. NAVIGATION — HOME / MOON / MARS
@@ -401,9 +395,8 @@ a {
     transition: var(--transition);
 }
 
-
 /* =========================================================
-   05. NAVIGATION — TIMELINE / ARTIFACTS / EXPLORER
+   05. NAVIGATION — OTHER PAGES
 ========================================================= */
 
 .header-inner {
@@ -460,9 +453,8 @@ a {
     top: 20px;
 }
 
-
 /* =========================================================
-   06. HOME — PRELOADER
+   06. PRELOADER
 ========================================================= */
 
 .preloader {
@@ -511,7 +503,6 @@ a {
         transform: scaleX(1);
     }
 }
-
 
 /* =========================================================
    07. HOME — HERO
@@ -648,7 +639,6 @@ a {
     writing-mode: vertical-rl;
 }
 
-
 /* =========================================================
    08. HOME — INTRODUCTION
 ========================================================= */
@@ -697,7 +687,6 @@ a {
 .intro-text .text-link {
     margin-top: 18px;
 }
-
 
 /* =========================================================
    09. HOME — FEATURED WORLDS
@@ -791,7 +780,6 @@ a {
     letter-spacing: 1.5px;
 }
 
-
 /* =========================================================
    10. HOME — FEATURED STORY
 ========================================================= */
@@ -844,7 +832,6 @@ a {
     margin-bottom: 30px;
     font-size: 13px;
 }
-
 
 /* =========================================================
    11. HOME — ARTIFACT CARDS
@@ -925,7 +912,6 @@ a {
     letter-spacing: 1px;
 }
 
-
 /* =========================================================
    12. HOME — QUOTE SECTION
 ========================================================= */
@@ -990,7 +976,6 @@ a {
     letter-spacing: 2px;
 }
 
-
 /* =========================================================
    13. HOME — TIMELINE PREVIEW
 ========================================================= */
@@ -1053,7 +1038,6 @@ a {
     text-align: center;
 }
 
-
 /* =========================================================
    14. HOME — EXPLORER CTA
 ========================================================= */
@@ -1102,7 +1086,6 @@ a {
     margin-bottom: 30px;
     font-size: 14px;
 }
-
 
 /* =========================================================
    15. MOON — HERO
@@ -1205,7 +1188,6 @@ a {
     font-size: 9px;
     letter-spacing: 2px;
 }
-
 
 /* =========================================================
    16. MOON — INTRO / STORY
@@ -1329,7 +1311,6 @@ a {
     font-size: 10px;
     letter-spacing: 2px;
 }
-
 
 /* =========================================================
    17. MOON — DARK FEATURES / ROVER / SCIENCE
@@ -1484,7 +1465,6 @@ a {
     font-size: 12px;
 }
 
-
 /* =========================================================
    18. MOON — REMAINS / TIMELINE / QUOTE / NEXT
 ========================================================= */
@@ -1630,7 +1610,6 @@ a {
     font-size: clamp(40px, 6vw, 65px);
 }
 
-
 /* =========================================================
    19. MARS — HERO
 ========================================================= */
@@ -1716,7 +1695,6 @@ a {
     letter-spacing: 2px;
 }
 
-
 /* =========================================================
    20. MARS — INTRO / LANDSCAPE
 ========================================================= */
@@ -1775,7 +1753,6 @@ a {
     font-size: 9px;
     letter-spacing: 1px;
 }
-
 
 /* =========================================================
    21. MARS — MISSION FEATURE
@@ -1839,7 +1816,6 @@ a {
     font-family: var(--font-heading);
     font-size: 18px;
 }
-
 
 /* =========================================================
    22. MARS — ROVERS
@@ -1915,7 +1891,6 @@ a {
     text-align: center;
 }
 
-
 /* =========================================================
    23. MARS — CURIOSITY / PERSEVERANCE
 ========================================================= */
@@ -1989,7 +1964,6 @@ a {
     font-size: 10px;
     letter-spacing: 1px;
 }
-
 
 /* =========================================================
    24. MARS — FORGOTTEN LANDERS / FACTS
@@ -2131,7 +2105,6 @@ a {
     color: var(--bg);
 }
 
-
 /* =========================================================
    25. TIMELINE — HERO
 ========================================================= */
@@ -2214,7 +2187,6 @@ a {
     letter-spacing: 2px;
 }
 
-
 /* =========================================================
    26. TIMELINE — INTRO
 ========================================================= */
@@ -2245,7 +2217,6 @@ a {
     margin-bottom: 20px;
     font-size: 14px;
 }
-
 
 /* =========================================================
    27. TIMELINE — MAIN TIMELINE
@@ -2417,7 +2388,6 @@ a {
     max-width: 650px;
     margin: 0 auto;
 }
-
 
 /* =========================================================
    28. ARTIFACTS — ARCHIVE CONTROLS
@@ -2592,7 +2562,6 @@ a {
     font-size: 14px;
 }
 
-
 /* =========================================================
    29. EXPLORER — DESTINATIONS
 ========================================================= */
@@ -2667,7 +2636,6 @@ a {
     letter-spacing: 1px;
 }
 
-
 /* =========================================================
    30. EXPLORER — MISSIONS
 ========================================================= */
@@ -2737,7 +2705,6 @@ a {
     margin-top: 20px;
 }
 
-
 /* =========================================================
    31. EXPLORER — ARCHIVE ACCESS
 ========================================================= */
@@ -2769,7 +2736,6 @@ a {
         url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1100&q=85")
         center / cover no-repeat;
 }
-
 
 /* =========================================================
    32. EXPLORER — FACTS / FINAL CTA
@@ -2832,7 +2798,6 @@ a {
     margin: 0 auto 30px;
     font-size: 14px;
 }
-
 
 /* =========================================================
    33. GLOBAL FOOTER — HOME
@@ -2914,7 +2879,6 @@ a {
     color: var(--cyan);
 }
 
-
 /* =========================================================
    34. GLOBAL FOOTER — OTHER PAGES
 ========================================================= */
@@ -2943,7 +2907,6 @@ a {
 .site-footer .footer-bottom.content-width {
     width: min(var(--container), calc(100% - 60px));
 }
-
 
 /* =========================================================
    35. ANIMATIONS
@@ -2977,7 +2940,6 @@ a {
         transition-duration: .01ms !important;
     }
 }
-
 
 /* =========================================================
    36. RESPONSIVE — TABLETS
@@ -3024,6 +2986,9 @@ a {
     }
 }
 
+/* =========================================================
+   37. RESPONSIVE — TABLETS / SMALL SCREENS
+========================================================= */
 
 @media (max-width: 800px) {
 
@@ -3040,8 +3005,6 @@ a {
     .section-padding {
         padding: 80px 0;
     }
-
-    /* Navigation */
 
     .navbar {
         position: relative;
@@ -3083,8 +3046,6 @@ a {
     .site-logo {
         font-size: 19px;
     }
-
-    /* Home */
 
     .hero {
         min-height: 780px;
@@ -3149,8 +3110,6 @@ a {
         text-align: left;
     }
 
-    /* Moon / Mars */
-
     .moon-hero,
     .mars-hero {
         min-height: 780px;
@@ -3168,8 +3127,6 @@ a {
     .rover-card-grid {
         grid-template-columns: 1fr 1fr;
     }
-
-    /* Timeline */
 
     .timeline-content {
         grid-template-columns: 1fr;
@@ -3191,8 +3148,6 @@ a {
     .timeline-entry::before {
         left: 100px;
     }
-
-    /* Artifacts / Explorer */
 
     .content-intro {
         grid-template-columns: 1fr;
@@ -3216,18 +3171,14 @@ a {
         gap: 15px;
     }
 
-    /* Footer */
-
     .footer-main,
     .site-footer .footer-main.content-width {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-
 /* =========================================================
-   37. RESPONSIVE — MOBILE
+   38. RESPONSIVE — MOBILE / EXTRA SMALL
 ========================================================= */
 
 @media (max-width: 560px) {
@@ -3258,8 +3209,6 @@ a {
     .site-logo small {
         font-size: 6px;
     }
-
-    /* Home hero */
 
     .hero {
         min-height: 760px;
@@ -3300,8 +3249,6 @@ a {
         display: none;
     }
 
-    /* Common headings */
-
     .section-heading h2,
     .section-heading-row h2 {
         font-size: 38px;
@@ -3315,8 +3262,6 @@ a {
         font-size: 20px;
     }
 
-    /* World cards */
-
     .worlds-grid {
         grid-template-columns: 1fr;
     }
@@ -3329,8 +3274,6 @@ a {
         font-size: 40px;
     }
 
-    /* Featured */
-
     .featured-image {
         min-height: 260px;
     }
@@ -3342,8 +3285,6 @@ a {
     .featured-content h2 {
         font-size: 36px;
     }
-
-    /* Cards */
 
     .artifacts-grid,
     .archive-card-grid,
@@ -3364,8 +3305,6 @@ a {
         min-height: auto;
     }
 
-    /* Quote */
-
     .quote-section {
         min-height: 470px;
     }
@@ -3373,8 +3312,6 @@ a {
     .quote-content h2 {
         font-size: 39px;
     }
-
-    /* Timeline preview */
 
     .timeline-preview::before {
         left: 73px;
@@ -3392,8 +3329,6 @@ a {
     .timeline-detail h3 {
         font-size: 14px;
     }
-
-    /* Moon */
 
     .moon-hero,
     .mars-hero {
@@ -3446,8 +3381,6 @@ a {
         gap: 10px;
     }
 
-    /* Mars */
-
     .mars-hero-meta {
         flex-direction: column;
         gap: 12px;
@@ -3493,8 +3426,6 @@ a {
         flex-direction: column;
     }
 
-    /* Page hero */
-
     .page-hero {
         min-height: 720px;
     }
@@ -3518,13 +3449,9 @@ a {
         margin-top: 45px;
     }
 
-    /* Content intro */
-
     .content-intro-copy h2 {
         font-size: 39px;
     }
-
-    /* Timeline page */
 
     .timeline-list {
         margin-top: 45px;
@@ -3563,8 +3490,6 @@ a {
         font-size: 18px;
     }
 
-    /* Archive */
-
     .archive-filter-links {
         gap: 8px;
         margin-bottom: 50px;
@@ -3582,8 +3507,6 @@ a {
     .archive-group-heading h3 {
         font-size: 30px;
     }
-
-    /* Explorer */
 
     .destination-grid {
         grid-template-columns: 1fr;
@@ -3609,8 +3532,6 @@ a {
         font-size: 39px;
     }
 
-    /* Footer */
-
     .footer-main,
     .site-footer .footer-main.content-width {
         grid-template-columns: 1fr;
@@ -3630,13 +3551,7 @@ a {
         padding: 22px 0;
         line-height: 1.8;
     }
-
 }
-
-
-/* =========================================================
-   38. EXTRA SMALL DEVICES
-========================================================= */
 
 @media (max-width: 380px) {
 
@@ -3694,5 +3609,99 @@ a {
     .forgotten-image {
         height: 75px;
     }
+}
 
+/* =========================================================
+   39. FINAL GLOBAL FIXES
+========================================================= */
+
+section,
+article,
+.world-card,
+.artifact-card,
+.archive-card,
+.destination-card,
+.explorer-mission-card {
+    min-width: 0;
+}
+
+.timeline-entry,
+.timeline-content,
+.moon-timeline-item,
+.forgotten-mission-item {
+    min-width: 0;
+}
+
+button,
+a {
+    transition: color .3s ease, background .3s ease,
+                border-color .3s ease, transform .3s ease;
+}
+
+.artifact-image,
+.archive-card-image,
+.timeline-image,
+.destination-image,
+.explorer-mission-image {
+    background-repeat: no-repeat;
+}
+
+.moon-hero-image,
+.mars-hero-image,
+.hero-background,
+.page-hero-image {
+    will-change: transform;
+}
+
+@media (max-width: 800px) {
+    .nav-links,
+    .primary-navigation {
+        z-index: 1001;
+        max-height: calc(100svh - var(--header-height));
+        overflow-y: auto;
+    }
+
+    .moon-hero-bottom {
+        padding-inline: 20px;
+    }
+
+    .moon-data-row,
+    .rover-card-footer,
+    .destination-details {
+        flex-wrap: wrap;
+    }
+
+    .mars-hero-content {
+        width: calc(100% - 40px);
+    }
+
+    .timeline-content {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .moon-section-top {
+        gap: 15px;
+    }
+
+    .moon-data-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .moon-image-caption,
+    .mars-landscape-caption {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .mission-content h2,
+    .curiosity-content h2 {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        gap: 8px;
+    }
 }
