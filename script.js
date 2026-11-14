@@ -1,30 +1,32 @@
-
 /* =========================================
    AFTERLIGHT
    THE SILENT RELICS OF SPACE EXPLORATION
-   MAIN JAVASCRIPT
+   COMPLETE MAIN JAVASCRIPT — FIXED
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================
-       01. PRELOADER
+       01. PRELOADER — FIXED
     ===================================== */
 
     const preloader = document.querySelector(".preloader");
 
     function hidePreloader() {
-        if (preloader) {
-            preloader.classList.add("loaded");
-        }
+        if (!preloader) return;
+
+        preloader.classList.add("loaded");
+        document.body.classList.add("page-ready");
     }
 
-    window.addEventListener("load", hidePreloader);
-
-    // Fallback in case the load event has already fired.
     if (document.readyState === "complete") {
         hidePreloader();
+    } else {
+        window.addEventListener("load", hidePreloader, { once: true });
     }
+
+    // Safety fallback
+    setTimeout(hidePreloader, 5000);
 
 
     /* =====================================
@@ -69,14 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        // Close menu after clicking a navigation link.
         navItems.forEach(link => {
-
             link.addEventListener("click", closeMenu);
-
         });
 
-        // Close menu when clicking outside.
         document.addEventListener("click", event => {
 
             const clickedInside =
@@ -89,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        // Close menu with Escape.
         document.addEventListener("keydown", event => {
 
             if (event.key === "Escape") {
@@ -98,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        // Reset navigation when returning to desktop layout.
         window.addEventListener("resize", () => {
 
             if (window.innerWidth > 768) {
@@ -129,9 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `);
 
     revealElements.forEach(element => {
-
         element.classList.add("reveal");
-
     });
 
     if ("IntersectionObserver" in window) {
@@ -159,17 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         revealElements.forEach(element => {
-
             revealObserver.observe(element);
-
         });
 
     } else {
 
         revealElements.forEach(element => {
-
             element.classList.add("visible");
-
         });
 
     }
@@ -186,13 +176,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!header) return;
 
         if (window.scrollY > 60) {
-
             header.classList.add("scrolled");
-
         } else {
-
             header.classList.remove("scrolled");
-
         }
 
     }
@@ -211,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname
         .split("/")
         .pop()
-        .toLowerCase();
+        .toLowerCase() || "index.html";
 
     navItems.forEach(link => {
 
@@ -275,15 +261,11 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach(card => {
 
         card.addEventListener("mouseenter", () => {
-
             card.classList.add("is-hovered");
-
         });
 
         card.addEventListener("mouseleave", () => {
-
             card.classList.remove("is-hovered");
-
         });
 
     });
@@ -293,14 +275,14 @@ document.addEventListener("DOMContentLoaded", () => {
        08. IMAGE LOADING FALLBACK
     ===================================== */
 
-    document.querySelectorAll(".world-image, .artifact-image").forEach(image => {
+    document.querySelectorAll(
+        ".world-image, .artifact-image"
+    ).forEach(image => {
 
         const background = getComputedStyle(image).backgroundImage;
 
         if (!background || background === "none") {
-
             image.classList.add("image-fallback");
-
         }
 
     });
