@@ -1,96 +1,96 @@
-/* =========================================================
+/* =========================================
    ABANDONED BUT NOT FORGOTTEN
-   Premium cinematic space documentary — shared stylesheet
-   Keeps the existing class names so current HTML can remain.
-========================================================= */
+   Cinematic Space Exploration Website
+========================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #080a0f;
-  --bg-light: #0d1119;
-  --surface: #111722;
-  --surface-2: #171f2c;
-  --white: #f4f1e9;
-  --muted: #a3a9b3;
-  --soft: #d1d4d8;
-  --accent: #c5a879;
-  --accent-light: #e0c99f;
-  --blue: #8da9c4;
-  --cyan: #b8c8d6;
-  --border: rgba(232, 226, 213, .14);
-  --font-heading: 'Manrope', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
-  --container: 1200px;
-  --ease: cubic-bezier(.2,.75,.25,1);
+    --bg: #050812;
+    --bg-light: #0b1424;
+    --surface: #101b2d;
+    --white: #f4f7ff;
+    --muted: #9aa9bf;
+    --blue: #62b8ff;
+    --cyan: #55e4ff;
+    --border: rgba(255,255,255,0.12);
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background: var(--bg);
-  color: var(--white);
-  font-family: var(--font-body);
-  line-height: 1.75;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+    background: var(--bg);
+    color: var(--white);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    overflow-x: hidden;
 }
-a { color: inherit; text-decoration: none; }
-img { display: block; max-width: 100%; }
-button { font: inherit; }
-::selection { background: var(--accent); color: #111; }
-.container { width: min(var(--container), 88%); margin-inline: auto; }
 
-/* Navigation */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
 .navbar {
-  position: absolute; inset: 0 0 auto; z-index: 100;
-  width: 100%; padding: 23px 0;
-  border-bottom: 1px solid rgba(255,255,255,.10);
-  background: linear-gradient(180deg, rgba(5,8,13,.72), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+
 .nav-container {
-  width: min(1380px, 90%); margin: auto;
-  display: flex; justify-content: space-between; align-items: center; gap: 28px;
+    width: min(1320px, 90%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .logo {
-  font-family: var(--font-heading); font-size: 17px; font-weight: 800;
-  letter-spacing: 2.2px; text-transform: uppercase; white-space: nowrap;
+    font-family: var(--font-heading);
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
-.logo span { color: var(--accent-light); }
-.nav-links { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 34px); list-style: none; }
-.nav-links a {
-  position: relative; color: rgba(244,241,233,.76); font-size: 11px;
-  font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
-  transition: color .3s ease;
-}
-.nav-links a::after {
-  content: ""; position: absolute; left: 0; bottom: -9px; width: 100%; height: 1px;
-  background: var(--accent-light); transform: scaleX(0); transform-origin: right;
-  transition: transform .35s var(--ease);
-}
-.nav-links a:hover, .nav-links a.active { color: var(--accent-light); }
-.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left; }
 
-/* Buttons */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 13px;
-  min-height: 49px; padding: 13px 24px; border: 1px solid rgba(224,201,159,.7);
-  color: var(--white); background: transparent; font-size: 10px; font-weight: 700;
-  letter-spacing: 1.8px; text-transform: uppercase;
-  transition: background .35s ease, color .35s ease, border-color .35s ease, transform .35s ease;
+.logo span {
+    color: var(--blue);
 }
-.btn::after { content: "↗"; font-size: 15px; line-height: 1; }
-.btn:hover { background: var(--accent-light); border-color: var(--accent-light); color: #101216; transform: translateY(-3px); }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: #101216; }
-.btn-primary:hover { background: var(--accent-light); border-color: var(--accent-light); }
 
-/* Home hero */
-.hero {
-  min-height: min(900px, 100svh); position: relative; display: flex; align-items: center;
-  overflow: hidden; isolation: isolate; background: #090e17;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
 }
-.hero-image {
-  position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%;
-  object-fit: cover; object-position: center 45%; animation: heroReveal 1.4s ease both;
-}
-.hero-overlay {
