@@ -94,3 +94,36 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cyan);
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+============================================ */
+
+.site-header {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(3, 7, 17, .72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.navbar {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  white-space: nowrap;
+   
