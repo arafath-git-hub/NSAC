@@ -1,153 +1,715 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline | Abandoned But Not Forgotten</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-<header class="navbar">
-    <a href="index.html" class="logo">ABANDONED <small>BUT NOT FORGOTTEN</small></a>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="moon.html">Moon</a>
-        <a href="mars.html">Mars</a>
-        <a href="artifacts.html">Artifacts</a>
-        <a href="timeline.html" class="active">Timeline</a>
-        <a href="explorer.html">Explorer</a>
-    </nav>
+    <meta name="description" content="Explore the history of human exploration on the Moon and Mars through the machines and equipment left behind.">
+
+    <title>Mission Timeline | AFTERLIGHT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-timeline">
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+
+        <a class="site-logo" href="index.html">
+            AFTER<span>LIGHT</span>
+            <small>THE SILENT RELICS OF SPACE EXPLORATION</small>
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="primary-navigation"
+             id="primary-navigation"
+             aria-label="Main navigation">
+
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="moon.html">The Moon</a>
+            <a class="nav-link" href="mars.html">Mars</a>
+            <a class="nav-link" href="artifacts.html">Artifacts</a>
+            <a class="nav-link active" href="timeline.html" aria-current="page">Timeline</a>
+            <a class="nav-link" href="explorer.html">Explorer</a>
+
+        </nav>
+    </div>
 </header>
 
-<main>
-<section class="hero timeline-hero">
-    <div class="hero-content">
-        <div class="eyebrow">CHRONOLOGY / HUMAN SPACE EXPLORATION</div>
-        <h1>A JOURNEY<br><span>THROUGH TIME.</span></h1>
-        <p class="hero-description">
-            Discover the missions, milestones and machines that
-            changed humanity's relationship with the universe.
+
+<main id="main-content">
+
+    <!-- HERO -->
+    <section class="page-hero timeline-hero">
+
+        <div class="page-hero-image"
+             role="img"
+             aria-label="Planetary exploration spacecraft in deep space">
+        </div>
+
+        <div class="page-hero-content content-width">
+
+            <p class="eyebrow">
+                THE HISTORY OF HUMAN EXPLORATION
+            </p>
+
+            <h1>
+                A Timeline<br>
+                of Silence<span>.</span>
+            </h1>
+
+            <p>
+                From the first lunar landings to the robotic explorers
+                of Mars, follow the missions that left their mark
+                on worlds beyond Earth.
+            </p>
+
+            <div class="page-hero-bottom">
+                <span>1969 — PRESENT</span>
+                <span>THE HISTORY OF EXPLORATION</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="content-intro section-padding content-width">
+
+        <div class="section-kicker">
+            <span>01</span>
+            <span>THE JOURNEY THROUGH TIME</span>
+        </div>
+
+        <div class="content-intro-copy">
+
+            <p class="eyebrow">A HISTORY WRITTEN IN MACHINES</p>
+
+            <h2>
+                Missions end.<br>
+                Their traces remain.
+            </h2>
+
+            <p>
+                Every mission has a beginning, a purpose, and an ending.
+                But on the Moon and Mars, the end of a mission does not
+                necessarily mean the end of its physical presence.
+            </p>
+
+            <p>
+                Landing stages, scientific instruments, rovers, and
+                other equipment remain at distant locations long after
+                their original tasks are complete. This timeline follows
+                some of the missions that created those lasting traces.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- TIMELINE -->
+    <section class="timeline-section section-padding">
+
+        <div class="content-width">
+
+            <div class="section-heading-row">
+
+                <div>
+                    <p class="eyebrow">CHRONOLOGICAL ARCHIVE</p>
+                    <h2>The moments that remained.</h2>
+                </div>
+
+                <p class="section-side-note">
+                    A journey across decades<br>
+                    of planetary exploration.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-list">
+
+
+                <!-- 1969 -->
+                <article class="timeline-entry" id="1969">
+
+                    <div class="timeline-year">
+                        <span>1969</span>
+                        <small>THE FIRST FOOTPRINTS</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-apollo"
+                             role="img"
+                             aria-label="Apollo 11 lunar landing">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">THE MOON / USA</span>
+
+                            <h3>Apollo 11</h3>
+
+                            <p>
+                                On July 20, 1969, Apollo 11 landed in the
+                                Sea of Tranquility. Neil Armstrong and
+                                Buzz Aldrin became the first humans to
+                                walk on the lunar surface.
+                            </p>
+
+                            <p>
+                                After the astronauts returned to lunar
+                                orbit, the Lunar Module's descent stage
+                                remained at the landing site. It became
+                                one of the earliest human-made objects
+                                deliberately left on the Moon.
+                            </p>
+
+                            <a href="moon.html#apollo-11" class="text-link">
+                                Explore the Apollo missions ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 1970 -->
+                <article class="timeline-entry" id="1970">
+
+                    <div class="timeline-year">
+                        <span>1970</span>
+                        <small>ROBOTIC EXPLORATION</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-lunokhod"
+                             role="img"
+                             aria-label="Lunokhod 1 lunar rover">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">THE MOON / SOVIET UNION</span>
+
+                            <h3>Lunokhod 1</h3>
+
+                            <p>
+                                The Soviet Union's Lunokhod 1 became
+                                the first successful remote-controlled
+                                rover to operate on another world.
+                            </p>
+
+                            <p>
+                                It travelled across the lunar surface,
+                                photographed its surroundings, and
+                                performed scientific measurements.
+                                Its mission ended in 1971, leaving the
+                                rover on the Moon.
+                            </p>
+
+                            <a href="moon.html#lunokhod" class="text-link">
+                                Explore Lunokhod ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 1971 -->
+                <article class="timeline-entry" id="1971">
+
+                    <div class="timeline-year">
+                        <span>1971</span>
+                        <small>ANOTHER WORLD</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-mars-3"
+                             role="img"
+                             aria-label="Mars 3 spacecraft concept">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / SOVIET UNION</span>
+
+                            <h3>Mars 3</h3>
+
+                            <p>
+                                The Soviet Mars 3 mission achieved
+                                the first successful soft landing
+                                on Mars in December 1971.
+                            </p>
+
+                            <p>
+                                Its lander began transmitting data
+                                from the surface, but communication
+                                stopped shortly afterward. The
+                                spacecraft's hardware remained
+                                on the Martian surface.
+                            </p>
+
+                            <a href="mars.html" class="text-link">
+                                Explore Mars missions ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 1972 -->
+                <article class="timeline-entry" id="1972">
+
+                    <div class="timeline-year">
+                        <span>1972</span>
+                        <small>THE FINAL APOLLO LANDING</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-apollo-17"
+                             role="img"
+                             aria-label="Apollo 17 lunar surface mission">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">THE MOON / USA</span>
+
+                            <h3>Apollo 17</h3>
+
+                            <p>
+                                Apollo 17 marked the final crewed
+                                lunar landing of the Apollo program.
+                                Astronauts Eugene Cernan and Harrison
+                                Schmitt explored the Taurus-Littrow valley.
+                            </p>
+
+                            <p>
+                                The mission left behind a Lunar Module
+                                descent stage, scientific equipment,
+                                and other objects at the landing site.
+                            </p>
+
+                            <a href="moon.html" class="text-link">
+                                Explore the lunar archive ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 1976 -->
+                <article class="timeline-entry" id="1976">
+
+                    <div class="timeline-year">
+                        <span>1976</span>
+                        <small>THE FIRST US LANDERS</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-viking"
+                             role="img"
+                             aria-label="Viking 1 Mars lander">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Viking 1 and Viking 2</h3>
+
+                            <p>
+                                NASA's Viking landers reached Mars
+                                in 1976. They returned the first
+                                successful US surface images from
+                                the planet.
+                            </p>
+
+                            <p>
+                                Their scientific experiments studied
+                                Martian soil and atmosphere. Both
+                                landers eventually stopped operating,
+                                but their structures remained on Mars.
+                            </p>
+
+                            <a href="mars.html" class="text-link">
+                                Explore Viking missions ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 1997 -->
+                <article class="timeline-entry" id="1997">
+
+                    <div class="timeline-year">
+                        <span>1997</span>
+                        <small>THE FIRST MARTIAN ROVER</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-sojourner"
+                             role="img"
+                             aria-label="Sojourner rover on Mars">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Pathfinder and Sojourner</h3>
+
+                            <p>
+                                NASA's Mars Pathfinder mission landed
+                                on Mars on July 4, 1997. It deployed
+                                Sojourner, a small robotic rover that
+                                explored the surrounding terrain.
+                            </p>
+
+                            <p>
+                                Pathfinder and Sojourner demonstrated
+                                a new approach to planetary exploration.
+                                The mission ended after communications
+                                were lost in September 1997.
+                            </p>
+
+                            <a href="mars.html#sojourner" class="text-link">
+                                Explore Sojourner ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 2004 -->
+                <article class="timeline-entry" id="2004">
+
+                    <div class="timeline-year">
+                        <span>2004</span>
+                        <small>THE LONG JOURNEY</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-mer"
+                             role="img"
+                             aria-label="Spirit and Opportunity Mars rovers">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Spirit and Opportunity</h3>
+
+                            <p>
+                                NASA's twin Mars Exploration Rovers
+                                arrived on Mars in January 2004.
+                                Spirit landed in Gusev Crater, while
+                                Opportunity landed in Meridiani Planum.
+                            </p>
+
+                            <p>
+                                Both rovers greatly exceeded their
+                                original planned mission duration.
+                                Spirit's mission ended in 2010, while
+                                Opportunity's mission ended in 2018.
+                            </p>
+
+                            <a href="mars.html#spirit" class="text-link">
+                                Explore the twin rovers ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 2012 -->
+                <article class="timeline-entry" id="2012">
+
+                    <div class="timeline-year">
+                        <span>2012</span>
+                        <small>A NEW GENERATION</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-curiosity"
+                             role="img"
+                             aria-label="Curiosity rover on Mars">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Curiosity arrives</h3>
+
+                            <p>
+                                NASA's Curiosity rover landed inside
+                                Gale Crater on August 6, 2012.
+                                Its mission was designed to investigate
+                                whether Mars once had environments
+                                capable of supporting microbial life.
+                            </p>
+
+                            <p>
+                                Curiosity remains an active mission.
+                                It is not abandoned equipment; it
+                                represents the continuing chapter
+                                of robotic exploration.
+                            </p>
+
+                            <a href="mars.html" class="text-link">
+                                Explore modern Mars exploration ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 2018 -->
+                <article class="timeline-entry" id="2018">
+
+                    <div class="timeline-year">
+                        <span>2018</span>
+                        <small>THE END OF AN ERA</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-opportunity"
+                             role="img"
+                             aria-label="Opportunity rover on Mars">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Opportunity's final communication</h3>
+
+                            <p>
+                                A planet-wide dust storm prevented
+                                Opportunity from receiving enough
+                                sunlight to recharge its batteries.
+                                The rover sent its last communication
+                                in June 2018.
+                            </p>
+
+                            <p>
+                                NASA officially declared the mission
+                                complete in February 2019 after
+                                repeated attempts to re-establish contact.
+                                Opportunity remained on Mars.
+                            </p>
+
+                            <a href="mars.html#opportunity" class="text-link">
+                                Remember Opportunity ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 2021 -->
+                <article class="timeline-entry" id="2021">
+
+                    <div class="timeline-year">
+                        <span>2021</span>
+                        <small>ANOTHER LANDING</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-perseverance"
+                             role="img"
+                             aria-label="Perseverance rover on Mars">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MARS / USA</span>
+
+                            <h3>Perseverance and Ingenuity</h3>
+
+                            <p>
+                                NASA's Perseverance rover landed in
+                                Jezero Crater on February 18, 2021.
+                                Its mission includes searching for
+                                signs of ancient microbial life and
+                                collecting rock samples.
+                            </p>
+
+                            <p>
+                                The Ingenuity helicopter demonstrated
+                                powered flight on another planet.
+                                Its flight operations ended in January
+                                2024 after damage to its rotor blades.
+                            </p>
+
+                            <p>
+                                Perseverance remains an active rover
+                                mission.
+                            </p>
+
+                            <a href="mars.html" class="text-link">
+                                Explore Perseverance ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PRESENT -->
+                <article class="timeline-entry timeline-current" id="present">
+
+                    <div class="timeline-year">
+                        <span>NOW</span>
+                        <small>THE STORY CONTINUES</small>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <div class="timeline-image timeline-present"
+                             role="img"
+                             aria-label="Mars landscape under a distant sky">
+                        </div>
+
+                        <div class="timeline-text">
+
+                            <span class="timeline-location">MOON / MARS</span>
+
+                            <h3>The next chapter</h3>
+
+                            <p>
+                                Exploration continues. Active missions,
+                                new scientific instruments, and future
+                                spacecraft will add new chapters to
+                                the history of human activity beyond Earth.
+                            </p>
+
+                            <p>
+                                The objects left by earlier missions
+                                remain reminders of how far exploration
+                                has travelled — and how much remains
+                                unknown.
+                            </p>
+
+                            <a href="explorer.html" class="text-link">
+                                Enter the explorer ↗
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLOSING SECTION -->
+    <section class="timeline-closing-section section-padding content-width">
+
+        <p class="eyebrow">BEYOND THE TIMELINE</p>
+
+        <h2>
+            History does not disappear<br>
+            when a mission ends.
+        </h2>
+
+        <p>
+            Every landing site tells a story. Every surviving machine
+            carries evidence of a journey. The timeline is only the
+            beginning — the objects themselves are waiting to be explored.
         </p>
-        <a href="#history" class="primary-button">TRAVEL THROUGH TIME ↗</a>
-    </div>
-</section>
 
-<section class="intro section-padding">
-    <div class="section-label">01 / THE BEGINNING</div>
-    <div class="intro-grid">
-        <h2>Every mission<br>made <span>history.</span></h2>
-        <div class="intro-text">
-            <p>From the first artificial satellites to robotic exploration of distant planets, space exploration has developed through extraordinary milestones.</p>
-            <p>Follow this timeline to discover how those achievements created the legacy we see beyond Earth today.</p>
-        </div>
-    </div>
-</section>
+        <a href="artifacts.html" class="button button-outline">
+            Explore the artifact archive ↗
+        </a>
 
-<section class="timeline-preview section-padding" id="history">
-    <div class="section-label">02 / HISTORICAL TIMELINE</div>
-    <div class="section-heading">
-        <h2>THE ROAD TO <span>THE UNKNOWN.</span></h2>
-    </div>
+    </section>
 
-    <div class="timeline-list">
-
-        <div class="timeline-item">
-            <span class="timeline-year">1957</span>
-            <div>
-                <h3>Sputnik 1</h3>
-                <p>The first artificial satellite launched into Earth orbit.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">1959</span>
-            <div>
-                <h3>Luna 2</h3>
-                <p>The first human-made object to reach the Moon.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">1969</span>
-            <div>
-                <h3>Apollo 11</h3>
-                <p>First crewed Moon landing in human history.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">1971</span>
-            <div>
-                <h3>Mariner 9</h3>
-                <p>First spacecraft to orbit another planet, Mars.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">1976</span>
-            <div>
-                <h3>Viking 1</h3>
-                <p>First successful US lander to operate on Mars.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">1997</span>
-            <div>
-                <h3>Mars Pathfinder</h3>
-                <p>Delivered the Sojourner rover to the Martian surface.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">2004</span>
-            <div>
-                <h3>Spirit & Opportunity</h3>
-                <p>Twin rovers began exploring the Martian environment.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">2012</span>
-            <div>
-                <h3>Curiosity</h3>
-                <p>The rover landed in Gale Crater to investigate Mars.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-        <div class="timeline-item">
-            <span class="timeline-year">2021</span>
-            <div>
-                <h3>Perseverance</h3>
-                <p>A new chapter of Martian exploration began in Jezero Crater.</p>
-            </div>
-            <span class="timeline-arrow">↗</span>
-        </div>
-
-    </div>
-</section>
 </main>
 
-<footer class="footer">
-    <a href="index.html">ABANDONED BUT NOT FORGOTTEN</a>
-    <p>Every milestone leaves a legacy.</p>
-    <div class="footer-bottom">
-        <span>© 2026 SPACE EXPLORATION PROJECT</span>
-        <a href="index.html">BACK TO HOME ↑</a>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-main content-width">
+
+        <a class="site-logo footer-logo" href="index.html">
+            AFTER<span>LIGHT</span>
+            <small>THE SILENT RELICS OF SPACE EXPLORATION</small>
+        </a>
+
+        <p>
+            A digital archive exploring the human-made traces
+            left across the Moon and Mars.
+        </p>
+
+        <div class="footer-navigation">
+
+            <a href="moon.html">The Moon</a>
+            <a href="mars.html">Mars</a>
+            <a href="artifacts.html">Artifacts</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="explorer.html">Explorer</a>
+
+        </div>
+
     </div>
+
+    <div class="footer-bottom content-width">
+
+        <span>
+            © 2026 AFTERLIGHT. AN INDEPENDENT STORYTELLING PROJECT.
+        </span>
+
+        <a href="#main-content">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
