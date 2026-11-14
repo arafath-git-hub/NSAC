@@ -1,105 +1,387 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moon | Abandoned But Not Forgotten</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore the forgotten machines, equipment, and historic remains of humanity's lunar exploration.">
+    <title>The Moon | AFTERLIGHT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="logo">ABANDONED <small>BUT NOT FORGOTTEN</small></a>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="moon.html" class="active">Moon</a>
-        <a href="mars.html">Mars</a>
-        <a href="artifacts.html">Artifacts</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="explorer.html">Explorer</a>
-    </nav>
-</header>
-
-<main>
-<section class="hero moon-hero">
-    <div class="hero-content">
-        <div class="eyebrow">DESTINATION 01 / EARTH'S MOON</div>
-        <h1>THE MOON.<br><span>LEFT BEHIND.</span></h1>
-        <p class="hero-description">
-            Humanity reached the Moon, made history, and left behind
-            extraordinary evidence of its journey.
-        </p>
-        <a href="#relics" class="primary-button">EXPLORE LUNAR RELICS ↗</a>
-    </div>
-</section>
-
-<section class="intro section-padding">
-    <div class="section-label">01 / THE LUNAR LEGACY</div>
-    <div class="intro-grid">
-        <h2>Footprints fade.<br><span>History remains.</span></h2>
-        <div class="intro-text">
-            <p>The Moon is home to equipment left behind by decades of exploration.</p>
-            <p>From lunar modules and scientific instruments to rovers and experiments, these objects tell the story of humanity's first steps beyond Earth.</p>
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <span>AFTERLIGHT</span>
+            <div class="loader-line"></div>
         </div>
     </div>
-</section>
 
-<section class="discover section-padding" id="relics">
-    <div class="section-label">02 / LUNAR ARTIFACTS</div>
-    <div class="section-heading">
-        <h2>THE SILENT <span>WITNESSES.</span></h2>
-    </div>
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">AFTER<span>LIGHT</span></a>
 
-    <div class="destination-grid">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85" alt="Space exploration" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">APOLLO 11</span>
-                <h3>LUNAR MODULE</h3>
-                <p>The descent stage of the Apollo 11 Lunar Module remains on the Moon.</p>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="moon.html" class="active">The Moon</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- MOON HERO -->
+        <section class="hero moon-hero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container reveal">
+                <span class="eyebrow">CHAPTER 01 / THE MOON</span>
+
+                <h1>
+                    THE SILENCE<br>
+                    WE LEFT <span>BEHIND.</span>
+                </h1>
+
+                <p>
+                    Humanity reached another world.
+                    We explored, experimented, and eventually departed.
+                    But not everything came home.
+                </p>
+
+                <a href="#moon-introduction" class="btn btn-primary">
+                    Explore the Lunar Legacy <span>↘</span>
+                </a>
             </div>
-        </article>
 
-        <article class="destination-card">
-            <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=1200&q=85" alt="Lunar landscape" class="destination-image">
-            <div class="card-content">
-                <span class="card-category">LUNAR EXPLORATION</span>
-                <h3>MOON ROVERS</h3>
-                <p>Apollo astronauts used lunar roving vehicles to travel across the lunar surface.</p>
+            <div class="hero-bottom container">
+                <span>384,400 KM FROM EARTH</span>
+                <span>EST. 1969 — PRESENT</span>
             </div>
-        </article>
+        </section>
 
-    </div>
-</section>
+        <!-- INTRODUCTION -->
+        <section class="intro-section section-padding" id="moon-introduction">
+            <div class="container intro-grid">
 
-<section class="artifact-section section-padding">
-    <div class="artifact-content">
-        <div class="section-label">03 / SCIENCE LEFT BEHIND</div>
-        <h2>EXPERIMENTS<br><span>THAT CHANGED HISTORY.</span></h2>
-        <p>Apollo missions deployed scientific instruments to study lunar conditions, seismic activity and the Moon's environment.</p>
-    </div>
-</section>
+                <div class="section-label reveal">
+                    <span>01 — THE BEGINNING</span>
+                    <div class="label-line"></div>
+                </div>
 
-<section class="section-padding">
-    <div class="section-label">04 / THE LEGACY</div>
-    <h2>THE MOON IS MORE THAN A DESTINATION.</h2>
-    <p class="hero-description">It is an archive of human ambition, engineering and discovery.</p>
-    <a href="mars.html" class="primary-button">NEXT DESTINATION: MARS ↗</a>
-</section>
-</main>
+                <div class="intro-content reveal">
+                    <h2>
+                        A SMALL STEP.<br>
+                        AN <span>ENDURING</span> PRESENCE.
+                    </h2>
 
-<footer class="footer">
-    <a href="index.html">ABANDONED BUT NOT FORGOTTEN</a>
-    <p>Remembering the machines that helped humanity reach beyond Earth.</p>
-    <div class="footer-bottom">
-        <span>© 2026 SPACE EXPLORATION PROJECT</span>
-        <a href="index.html">BACK TO HOME ↑</a>
-    </div>
-</footer>
+                    <p>
+                        When Apollo 11 landed on the Moon in 1969,
+                        humanity made history. But the mission left
+                        behind more than footprints.
+                    </p>
 
-<script src="script.js"></script>
+                    <p>
+                        Cameras, scientific instruments, tools, and
+                        parts of spacecraft remained on the lunar
+                        surface. They became silent reminders of
+                        one of humanity's greatest journeys.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- APOLLO SECTION -->
+        <section class="featured-section section-padding moon-apollo">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <span class="eyebrow">THE APOLLO LEGACY</span>
+                        <h2>WHAT REMAINS<br>ON THE MOON?</h2>
+                    </div>
+
+                    <p>
+                        Every object tells a story.
+                        Every abandoned instrument marks a moment
+                        in the history of exploration.
+                    </p>
+                </div>
+
+                <div class="featured-grid">
+
+                    <article class="featured-card reveal">
+                        <div class="featured-image apollo-module"></div>
+
+                        <div class="featured-info">
+                            <span class="card-number">01 / SPACECRAFT</span>
+                            <h3>Lunar Module Descent Stages</h3>
+
+                            <p>
+                                The lower stages of Apollo Lunar Modules
+                                remained on the Moon after astronauts
+                                departed in the ascent stages.
+                            </p>
+
+                            <span class="card-tag">APOLLO MISSIONS</span>
+                        </div>
+                    </article>
+
+                    <article class="featured-card reveal">
+                        <div class="featured-image lunar-rover"></div>
+
+                        <div class="featured-info">
+                            <span class="card-number">02 / VEHICLE</span>
+                            <h3>The Lunar Roving Vehicle</h3>
+
+                            <p>
+                                Three Apollo missions used electric
+                                lunar rovers to travel across the
+                                Moon. The vehicles were left behind.
+                            </p>
+
+                            <span class="card-tag">APOLLO 15, 16 & 17</span>
+                        </div>
+                    </article>
+
+                    <article class="featured-card reveal">
+                        <div class="featured-image lunar-instruments"></div>
+
+                        <div class="featured-info">
+                            <span class="card-number">03 / SCIENCE</span>
+                            <h3>Scientific Instruments</h3>
+
+                            <p>
+                                Experiments placed on the lunar surface
+                                helped scientists study moonquakes,
+                                solar wind, and the lunar environment.
+                            </p>
+
+                            <span class="card-tag">LUNAR SCIENCE</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL WIDTH STORY -->
+        <section class="moon-story-section">
+            <div class="moon-story-overlay"></div>
+
+            <div class="container moon-story-content reveal">
+                <span class="eyebrow">A PLACE FROZEN IN TIME</span>
+
+                <h2>
+                    THE MOON<br>
+                    REMEMBERS.
+                </h2>
+
+                <p>
+                    With no wind or rain to erase them, many human-made
+                    objects and footprints remain where astronauts left
+                    them. The lunar surface preserves traces of those
+                    extraordinary visits.
+                </p>
+            </div>
+        </section>
+
+        <!-- OBJECTS ARCHIVE -->
+        <section class="artifacts-section section-padding">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <span class="eyebrow">THE LUNAR ARCHIVE</span>
+                        <h2>OBJECTS OF<br>ANOTHER WORLD.</h2>
+                    </div>
+
+                    <p>
+                        A closer look at some of the equipment and
+                        objects associated with lunar exploration.
+                    </p>
+                </div>
+
+                <div class="artifacts-grid">
+
+                    <article class="artifact-card reveal">
+                        <div class="artifact-image flag-image"></div>
+                        <div class="artifact-details">
+                            <span>APOLLO 11</span>
+                            <h3>The American Flag</h3>
+                            <p>
+                                A flag was placed on the lunar surface
+                                during humanity's first crewed Moon landing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="artifact-card reveal">
+                        <div class="artifact-image camera-image"></div>
+                        <div class="artifact-details">
+                            <span>APOLLO MISSIONS</span>
+                            <h3>Lunar Cameras</h3>
+                            <p>
+                                Cameras documented the lunar landscape
+                                and the work of astronauts on the surface.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="artifact-card reveal">
+                        <div class="artifact-image experiment-image"></div>
+                        <div class="artifact-details">
+                            <span>APOLLO SCIENCE</span>
+                            <h3>Experiment Packages</h3>
+                            <p>
+                                Scientific equipment collected data
+                                long after astronauts returned to Earth.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section class="timeline-section section-padding">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <span class="eyebrow">A JOURNEY THROUGH TIME</span>
+                        <h2>THE LUNAR<br>CHRONICLES.</h2>
+                    </div>
+
+                    <p>
+                        A few defining moments in the history
+                        of human exploration of the Moon.
+                    </p>
+                </div>
+
+                <div class="timeline-list">
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">1959</span>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Luna 2</h3>
+                            <p>
+                                The Soviet spacecraft became the first
+                                human-made object to reach the Moon.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">1969</span>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Apollo 11</h3>
+                            <p>
+                                Neil Armstrong and Buzz Aldrin became
+                                the first humans to walk on the Moon.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">1971</span>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Apollo 15</h3>
+                            <p>
+                                The first crewed lunar rover mission
+                                expanded exploration across the surface.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">1972</span>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Apollo 17</h3>
+                            <p>
+                                The final crewed Apollo Moon landing
+                                left behind another chapter of
+                                humanity's lunar history.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING -->
+        <section class="explorer-cta section-padding">
+            <div class="container reveal">
+                <span class="eyebrow">THE JOURNEY CONTINUES</span>
+
+                <h2>
+                    ANOTHER WORLD.<br>
+                    ANOTHER <span>STORY.</span>
+                </h2>
+
+                <p>
+                    The Moon was only the beginning.
+                    Beyond it lies another world filled with
+                    machines, discoveries, and forgotten missions.
+                </p>
+
+                <a href="mars.html" class="btn btn-primary">
+                    Explore Mars <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">AFTER<span>LIGHT</span></a>
+                <p>THE SILENT RELICS OF SPACE EXPLORATION.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="moon.html">The Moon</a>
+                <a href="mars.html">Mars</a>
+                <a href="artifacts.html">Artifacts</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="explorer.html">Explorer</a>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="currentYear"></span> AFTERLIGHT</span>
+                <span>HUMANITY'S HISTORY, WRITTEN IN SPACE.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
